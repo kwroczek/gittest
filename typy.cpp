@@ -1,6 +1,5 @@
 /*
  * hello.cpp
- * 
  */
 
 #include <iostream>
@@ -12,13 +11,18 @@ int main (int argc, char **argv)
 
     // char imie; // deklaracja zmiennej znakowej
     char imie [10]; //deklaracja tablicy znakowej
-    
+    //int wiek; //deklaracja  typu całkowiego
+    //wiek = 0; // inicjacja zmiennej
+    int wiek = 0;
 
-	cout << "Witaj w C++"; << endl;
-    cout << "Imię: Kasia";
+	cout << "Witaj w C++" << endl;
+    cout << "Imię: ";
     //cin >> imię; 
     cin. getline(imie,10);
     cout << "Cześć" << imie << endl;
+    cout << "Ile masz lat? ";
+    cin >> wiek;
+    cout << "Rok urodzenia: " << 2017 - wiek << endl;
     
 	return 0;
 }
